@@ -1,0 +1,129 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7f9;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #1abc9c; /* ターコイズブルー */
+  color: white;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.blank {
+  background-color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.photo-section {
+  margin: 2rem 0;
+}
+
+.photo-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background-color: #a8e063; /* 黄緑色 */
+  color: #000;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #8bd64c;
+}
+
+/* ========= レスポンシブ対応：タブレット以上 (600px〜) ========= */
+@media (min-width: 600px) {
+  .nav-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .photo-section img {
+    max-width: 70%;
+  }
+
+  .info-section {
+    padding: 2rem 3rem;
+  }
+}
+
+/* ========= レスポンシブ対応：PC以上 (1024px〜) ========= */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.4rem;
+  }
+
+  .photo-section img {
+    max-width: 50%;
+  }
+
+  .info-section {
+    padding: 3rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+.social-footer {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 0.8rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e0f7f9;
+}
